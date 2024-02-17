@@ -28,11 +28,15 @@ Then, install the required Python packages:
 
 ```bash
 pip install -r requirements.txt
+npm install
 ```
 
 Finally, run the application:
 
 ```bash
 python app.py
+npm start
 ```
+
+The backend runs on port 5000, and the frontend runs on port 3000.
 

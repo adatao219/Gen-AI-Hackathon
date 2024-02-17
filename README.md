@@ -5,8 +5,11 @@ This is a project for the Gen-AI Hackathon. The project is a web application tha
 ## Functionality: 
 
 It's a service helping job seekers formulate a resume from raw description quickly.
-The user just input raw information they want to insert into the resume, 
-and the service will generate the LaTeX code for their resume.
+The user just input raw information they want to put into the resume, 
+and the service will refine and format their experiences with bullet points,
+then generate the LaTeX code for their resume.
+
+Please refer to the last section Examples for a sample raw input and the generated code.
 
 ![example resume](https://res.cloudinary.com/dvidz8bwi/image/upload/v1708207815/samples/readme_img_isjsiw.png)
 
@@ -90,6 +93,7 @@ skills: Flask, SpringBoot, Node.js, React.js, Python, Java, C++, TypeScript
 ```
 
 example output:
+```
 \documentclass[a4paper,10pt]{article}
 \usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry}
 \usepackage{enumitem}
@@ -170,5 +174,5 @@ Academic performance: GPA 3.9/4.0.
 \end{center}
 
 \end{document}
-
+```
 

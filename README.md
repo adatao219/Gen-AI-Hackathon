@@ -12,7 +12,7 @@ then generate the LaTeX code for their resume.
 ### Example Screenshots
 
 Template resume:
-![template resume](https://res.cloudinary.com/dvidz8bwi/image/upload/v1708207815/samples/readme_img_isjsiw.png)
+<img src="https://res.cloudinary.com/dvidz8bwi/image/upload/v1708207815/samples/readme_img_isjsiw.png" width="400">
 
 Demo - UI:
 ![ui](https://res.cloudinary.com/dvidz8bwi/image/upload/v1708208681/samples/4321708208652_.pic_uzeufm.png)

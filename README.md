@@ -9,58 +9,6 @@ The user just input raw information they want to put into the resume,
 and the service will refine and format their experiences with bullet points,
 then generate the LaTeX code for their resume.
 
-Please refer to the last section Examples for a sample raw input and the generated code.
-
-![example resume](https://res.cloudinary.com/dvidz8bwi/image/upload/v1708207815/samples/readme_img_isjsiw.png)
-
-![ui](https://res.cloudinary.com/dvidz8bwi/image/upload/v1708207910/samples/4301708207860_.pic_bdnwgl.jpg)
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-### Prerequisites
-
-What things you need to install the software and how to install them:
-
-- Python 3.8 or later
-- pip (Python package installer)
-
-### Installing
-
-A step-by-step series of examples that tell you how to get a development environment running.
-
-First, clone the repository to your local machine:
-
-```bash
-git clone https://github.com/yourusername/projectname.git
-cd projectname
-```
-    
-Then, install the required Python packages:
-
-```bash
-pip install -r requirements.txt
-npm install
-```
-
-Configure .env with credentials:
-Inside .env, add the following:
-
-```
-GPT_API_KEY=sk-... (your GPT-4 APT key)
-```
-
-Finally, run the application:
-
-```bash
-python app.py
-npm start
-```
-
-The backend runs on port 5000, and the frontend runs on port 3000.
-
-
 ## Example
 example input:
 ```
@@ -175,4 +123,56 @@ Academic performance: GPA 3.9/4.0.
 
 \end{document}
 ```
+
+### Sample Screenshots
+
+![example resume](https://res.cloudinary.com/dvidz8bwi/image/upload/v1708207815/samples/readme_img_isjsiw.png)
+
+![ui](https://res.cloudinary.com/dvidz8bwi/image/upload/v1708207910/samples/4301708207860_.pic_bdnwgl.jpg)
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+What things you need to install the software and how to install them:
+
+- Python 3.8 or later
+- pip (Python package installer)
+
+### Installing
+
+A step-by-step series of examples that tell you how to get a development environment running.
+
+First, clone the repository to your local machine:
+
+```bash
+git clone https://github.com/yourusername/projectname.git
+cd projectname
+```
+    
+Then, install the required Python packages:
+
+```bash
+pip install -r requirements.txt
+npm install
+```
+
+Configure .env with credentials:
+Inside .env, add the following:
+
+```
+GPT_API_KEY=sk-... (your GPT-4 APT key)
+```
+
+Finally, run the application:
+
+```bash
+python app.py
+npm start
+```
+
+The backend runs on port 5000, and the frontend runs on port 3000.
+
 

@@ -14,14 +14,27 @@ export default function Build_Itinerary_1() {
   };
 
   // Simulate a backend call
-  const handleGenerateResume = () => {
+  const handleGenerateResume = async () => {
     console.log("Sending to backend:", resumeContent);
-    // Simulate backend processing and updating the output
-    setTimeout(() => {
-      // This is where you would make the actual backend call
-      // For demonstration, we're just appending some text to the input
-      setResumeOutput(`Processed Resume Inputs: ${resumeContent}`);
-    }, 1000); // Simulate async call delay
+    
+    try {
+      const response = await fetch('http://localhost:8080/generate_resume', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ resumeContent: resumeContent }),
+      });
+  
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+  
+      const data = await response.json();
+      setResumeOutput(data.processedContent); // Assuming 'processedContent' is what the backend returns
+    } catch (error) {
+      console.error('There was a problem with your fetch operation:', error);
+    }
   };
 
   return (

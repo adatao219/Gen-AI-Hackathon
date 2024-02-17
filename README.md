@@ -8,6 +8,10 @@ It's a service helping job seekers formulate a resume from raw description quick
 The user just input raw information they want to insert into the resume, 
 and the service will generate the LaTeX code for their resume.
 
+![example resume](https://res.cloudinary.com/dvidz8bwi/image/upload/v1708207815/samples/readme_img_isjsiw.png)
+
+![ui](https://res.cloudinary.com/dvidz8bwi/image/upload/v1708207910/samples/4301708207860_.pic_bdnwgl.jpg)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -56,7 +60,8 @@ The backend runs on port 5000, and the frontend runs on port 3000.
 
 ## Example
 example input:
-```John Whiteman
+```
+John Whiteman
 1234567890
 john_w@notreal.com
 https://www.linkedin.com/in/john-whiteman
@@ -123,8 +128,8 @@ Expert software engineer specializing in machine learning, with a keen interest 
 \subsection*{Software Engineer}  \hfill Apple Inc., July 2022 - Present
 \begin{itemize}
   \item Spearheaded the development of feature-rich applications in app store, driving user engagement and enhancing the user experience.
- \item Led teams in the ideation and execution of new projects, ensuring efficient management and delivery.
- \item Developed novel machine learning algorithms and platforms to support other ML engineers in their tasks.
+ \item Led teams in ideation and execution of new projects, ensuring efficient management and delivery.
+ \item Developed novel machine learning platform to support other ML engineers in their tasks.
 \end{itemize}
 
 \subsection*{Engineering Intern}  \hfill Brave Software Company, May 2019 - Aug 2019
@@ -145,7 +150,7 @@ Expert software engineer specializing in machine learning, with a keen interest 
 \subsection*{ML Platform}  \hfill University of Pennsylvania, Nov 2019
 \begin{itemize}
     \item Designed and developed a robust distributed platform for ML model training, fostering collaborations among the team.
-    \item Implemented a GPU-accelerated pipeline with Kubernetes, HDFS & Spark, Minio for persistent output storage.
+    \item Implemented a GPU-accelerated pipeline with Kubernetes, HDFS \& Spark, Minio for persistent output storage.
 \end{itemize}
 
 \section*{\faIcon{graduation-cap} Education}
@@ -165,3 +170,5 @@ Academic performance: GPA 3.9/4.0.
 \end{center}
 
 \end{document}
+
+

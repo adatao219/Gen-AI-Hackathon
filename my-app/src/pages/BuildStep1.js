@@ -52,7 +52,7 @@ export default function Build_Itinerary_1() {
   <TextField
     label="Processed Resume"
     multiline
-    rows={4}
+    rows={16}
     variant="outlined"
     placeholder="Processed resume content will appear here..."
     value={resumeOutput}

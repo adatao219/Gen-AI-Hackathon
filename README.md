@@ -37,6 +37,13 @@ pip install -r requirements.txt
 npm install
 ```
 
+Configure .env with credentials:
+Inside .env, add the following:
+
+```
+GPT_API_KEY=sk-... (your GPT-4 APT key)
+```
+
 Finally, run the application:
 
 ```bash

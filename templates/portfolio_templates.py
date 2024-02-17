@@ -1,54 +1,4 @@
-import os
-import openai
-
-from getpass import getpass
-import os
-import openai
-
-print('Enter OpenAI API key:')
-openai.api_key = getpass()
-
-os.environ['OPENAI_API_KEY']=openai.api_key
-
-def call_generative_ai_api(data):
-  openai.api_key = os.getenv("OPENAI_API_KEY")
-  return {
-      "choices": [{
-          "text": "Sample response based on provided data."
-      }]
-  }
-
-
-def process_portfolio_template(name, projects, experiences, template):
-    # Prepare the data to be sent to the generative AI API
-    data = {
-        "name": name,
-        "projects": projects,
-        "experiences": experiences,
-        "template": template,
-    }
-
-    # Call the generative AI API (simulated in this example)
-    response = call_generative_ai_api(data)
-    generated_text = response["choices"][0]["text"]
-
-    # Extract the processed template from the response
-
-    return generated_text
-
-# Example input data
-name = "Jane Doe"
-projects = [
-    {"name": "Project 1", "description": "Description of Project 1."},
-    {"name": "Project 2", "description": "Description of Project 2."},
-]
-experiences = [
-    {"role": "Role 1", "company": "Company 1", "description": "Description of Role 1."},
-    {"role": "Role 2", "company": "Company 2", "description": "Description of Role 2."},
-]
-
-# Example template with placeholders for name, projects, and experiences
-template = """
+portfolio_template1 = """
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -233,7 +183,7 @@ template = """
         .intro-title {
           margin-top: 20px;  /* Adjust this value as needed for desired indent */
         }
-      
+
         .service-content-box + .service-title {
           margin-top: 100px;  /* Adding 100px space */
         }
@@ -415,10 +365,10 @@ template = """
                 </p>
               </li>
 
-             
+
             </ol>
 
-          
+
             <div class="title-wrapper">
               <div class="icon-box">
                 <ion-icon name="book-outline"></ion-icon>
@@ -469,7 +419,7 @@ template = """
           <header>
             <h2 class="h2 article-title">Projects</h2>
           </header>
-  
+
           <ul class="project-list">
             <a href="https://blitzat.com">
               <figure class="project-img">
@@ -499,7 +449,7 @@ template = """
                 </div>
               </div>
             </a>
-          
+
             <a href="https://www.wizeats.com/">
               <figure class="project-img">
                 <div class="project-item-icon-box">
@@ -537,7 +487,7 @@ template = """
                     loading="lazy"
                   />
                 </figure>
-  
+
                 <div class="project-info">
                   <h2 class="project-title">Facebook Haystack Database</h2>
                   <p class="project-category">
@@ -547,7 +497,7 @@ template = """
                     <p style="color: white;"></pp>
                       •  This database replicated the Facebook's photo storage feature that optimized storage, enabled efficient retrieval and reduced metadata overhead by 80%<br>
                       •  Added in a recommended friend search algorithm using heuristic and graph techniques<br>
-                      
+
                     </p>
                   </div>
                 </div>
@@ -563,7 +513,7 @@ template = """
                     loading="lazy"
                   />
                 </figure>
-  
+
                 <div class="project-info">
                   <h2 class="project-title">Photo:D Cloud Photo Sharing Platform (Full Stack)</h2>
                   <p class="project-category">
@@ -590,7 +540,7 @@ template = """
                     loading="lazy"
                   />
                 </figure>
-  
+
                 <div class="project-info">
                   <h2 class="project-title">Investment made possible</h2>
                   <p class="project-category">
@@ -605,10 +555,10 @@ template = """
                 </div>
               </a>  
           </ul>
-          
+
         </section>
 
-        
+
         <section id="hobbies" class="hobbies" data-page="hobbies">
 
           <header>
@@ -743,8 +693,3 @@ template = """
   </body>
 </html>
 """
-
-# Process the portfolio template
-processed_template = process_portfolio_template(name, projects, experiences, template)
-
-print(processed_template)

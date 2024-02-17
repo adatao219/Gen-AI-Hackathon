@@ -1,4 +1,4 @@
-# /backend/kani/engine_config.py
+# /kani/config.py
 
 from kani.engines.openai import OpenAIEngine
 from kani import Kani
